@@ -2212,9 +2212,12 @@ li .fa {
 */
 
 .mh-portfolio {
-  /* background: linear-gradient(135deg, #0bceaf 0%,  #0bceaf 5%, white 5%, white 95%,#0bceaf 95%); */
-  background: #f2f2f24d
+  /* background: linear-gradient(-135deg, #0bceaf 0%,  #0bceaf 5%, white 5%, white 90%,#0bceaf 90%); */
+  /* border-radius: 12%; */
+  /* background: linear-gradient(-135deg, #0bceaf 0%,  #0bceaf 5%, white 5%); */
+  /* background: #f2f2f24d */
 }
+
 
 .mh-testimonial.mh-single-testimonial .mh-client-item p {
   padding: 0 160px;
