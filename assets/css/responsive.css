@@ -596,9 +596,15 @@
 
 @media only screen and (max-width: 420px) {
   .mh-home .img-border {
-    height: 280px;
-    width: 280px;
+    height: 210px;
+    width: 210px;
+    border: 15px solid rgba(0, 0, 0, 0.07);
   }
+
+  .mh-home .img-border img {
+    border: 15px solid rgba(0, 0, 0, 0.17)
+  }
+  
   .home-padding {
     padding: 60px 0;
   }
