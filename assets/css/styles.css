@@ -3973,3 +3973,20 @@ BLOG Pagination
   background: black;
 }
 /*# sourceMappingURL=styles.css.map */
+
+@media only screen and (max-width: 1200px) {
+  .sub-title {
+    display: none;
+  }
+
+  .title {
+    font-size: 16px !important;
+  }
+}
+
+.title {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  
+}
+
