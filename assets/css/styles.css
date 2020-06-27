@@ -4006,7 +4006,7 @@ BLOG Pagination
   padding-top: 10px;
   height: auto;
   padding-bottom: 32px;
-  /* opacity: .97; */
+  opacity: .98;
   animation-name: fadeInUp;
   transition: 0.3s;
   box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);

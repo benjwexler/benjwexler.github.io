@@ -40,6 +40,11 @@
 }
 
 @media only screen and (max-width: 991px) {
+  
+  .mh-service {
+    display: none;
+  }
+
   .section-separator {
     padding: 40px 0;
   }
@@ -594,6 +599,7 @@
   .text-left.text-xs-center {
     text-align: center !important;
   }
+
 }
 
 @media only screen and (max-width: 420px) {
