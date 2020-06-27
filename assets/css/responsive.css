@@ -227,6 +227,7 @@
     display: block;
   }
   .mh-xs-mobile-nav .navbar-collapse {
+    display: none;
     position: fixed;
     top: 0;
     bottom: 0;
@@ -236,6 +237,7 @@
     margin-top: 0px;
     padding: 0;
     background-color: #0bceaf;
+    background-color: yellow;
     transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
     -o-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);
     -ms-transform: translateX(-100%) translateY(0) translateZ(0) rotate(0deg) scale(1);

@@ -79,12 +79,14 @@
       active      = false;
   
 
-      $('.navbar-toggler, .navbar-nav li a, .overlay').on('click', function () {
-          $('.navbar-toggler').toggleClass('active')
+      $('.navbar-toggler, .navbar-nav li a, .overlay, .my-nav-item-link').on('click', function () {
+          // $('.navbar-toggler').toggleClass('active')
+
+          $('.my-mobile-nav').toggleClass('active')
         //   $('#js-navbar-menu').toggleClass('active');
         //   $('.navbar-collapse').toggleClass('show');
           overlay.toggleClass('active');
-          navc.toggleClass('active');
+          // navc.toggleClass('active-custom');
       });  
       
         

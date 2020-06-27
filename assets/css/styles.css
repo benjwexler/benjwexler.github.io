@@ -3990,3 +3990,59 @@ BLOG Pagination
   
 }
 
+.my-mobile-nav {
+  position: absolute;
+  /* display: none; */
+  visibility: hidden;
+}
+
+.my-mobile-nav.active {
+  visibility: visible;
+  background: white !important;
+  position: absolute;
+  width: 100%;
+  top: 72px;
+  z-index: 99999999999;
+  padding-top: 10px;
+  height: auto;
+  padding-bottom: 32px;
+  /* opacity: .97; */
+  animation-name: fadeInUp;
+  transition: 0.3s;
+  box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);
+  justify-content: space-around;
+  flex-wrap: wrap;
+  display: flex;
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.nav-strict .my-mobile-nav {
+  top: 52px;
+  padding-bottom: 22px;
+}
+
+.my-nav-item {
+  font-size: 18px;
+    padding-bottom: 9px;
+    padding-top: 9px;
+    text-align: center;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 65px;
+    margin-right: 65px;
+    
+}
+
+.my-nav-item-link {
+  color: #0bceaf !important;
+    border: 1px solid black;
+    width: 174px;
+    margin: auto;
+    border-radius: 3px;
+
+}
+
+.overlay {
+  opacity: 0 !important;
+}
