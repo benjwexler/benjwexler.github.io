@@ -894,11 +894,14 @@ button:focus {
   opacity: 0.8;
 }
 
-.white-vertion .mh-header .navbar-nav li.active a {
-  padding-right: 0;
-  padding-left: 0;
-  border-color: #000;
+.white-vertion .mh-header .navbar-nav li.active a div{
+  /* padding-right: 0;
+  padding-left: 0; */
+  /* border-color: #000; */
+  border-bottom: 1px solid black;
 }
+
+
 
 .white-vertion .mh-header.nav-3 .navbar-nav li.active a {
   border-color: transparent;
@@ -1390,7 +1393,32 @@ li .fa {
 }
 
 .mh-header .navbar-nav li {
-  margin: 0 20px;
+  /* margin: 0 20px; */
+  /* padding: 0 20px; */
+  border-radius: 5px;
+  transition: none;
+  
+}
+
+.mh-header .navbar-nav li:hover {
+  background: black;
+  /* transition: 0.3s ; */
+}
+
+.social-media-icon-footer {
+  padding: 0 !important;
+
+}
+
+.social-media-icon-footer i {
+  padding: 10px;
+  transition: 0.2s;
+  
+}
+
+.social-media-icon-footer i:hover {
+  transform: scale(1.3) !important;
+  transition: 0.3s;
 }
 
 .mh-header .navbar-nav li a {
@@ -1400,15 +1428,43 @@ li .fa {
   font-size: 18px;
   opacity: 1;
   line-height: 30px;
+  transition: none;
+  padding-bottom: 0;
 }
 
+.mh-header .navbar-nav li a div {
+  color: inherit;
+  padding-bottom: 8px;
+}
+
+.nav-link {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+  
+}
+
+.nav-link-container.active .nav-link{
+  border-bottom: 1px solid black;
+}
+
+
+
 .mh-header .navbar-nav li a.nav-link {
-  padding-left: 0;
-  padding-right: 0;
+  
 }
 
 .mh-header .navbar-nav li a:hover {
   color: #0bceaf;
+  transition: none;
+  /* background: black; */
+}
+
+.mh-header .navbar-nav li a div:hover {
+  color: #0bceaf;
+}
+
+.nav-item:hover {
+  color: green;
 }
 
 .nav-3 .navbar-dark .navbar-nav .nav-link a {
@@ -3996,6 +4052,8 @@ BLOG Pagination
   visibility: hidden;
 }
 
+
+
 .my-mobile-nav.active {
   visibility: visible;
   background: white !important;
@@ -4015,6 +4073,12 @@ BLOG Pagination
   display: flex;
   padding-left: 45px;
   padding-right: 45px;
+}
+
+@media only screen and (min-width: 992px) {
+  .my-mobile-nav.active{
+    visibility: hidden;
+  }
 }
 
 .nav-strict .my-mobile-nav {
