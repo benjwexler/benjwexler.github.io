@@ -1439,8 +1439,8 @@ li .fa {
 }
 
 .nav-link {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding: 0 !important;
+  /* padding-right: 0 !important; */
   position: relative;
   overflow: hidden;
   
@@ -1467,8 +1467,9 @@ li .fa {
 }
 
 .nav-item {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  /* padding-left: 20px !important;
+  padding-right: 20px !important; */
+  padding: 8px 20px !important;
 }
 
 .nav-item:hover {
@@ -1488,7 +1489,7 @@ li .fa {
 }
 
 .home-padding {
-  padding: 104px 0 180px 0;
+  padding: 180px 0;
 }
 
 /*
@@ -3950,6 +3951,7 @@ BLOG Pagination
 }
 
 .downloadResumeBtn {
+  transition: 0.1s all;
   /* border: 3px solid #0bceaf; */
 }
 .downloadResumeBtn:hover{
@@ -4076,7 +4078,7 @@ BLOG Pagination
   animation-name: fadeInUp;
   transition: 0.3s;
   box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   display: flex;
   padding-left: 45px;
