@@ -13,7 +13,6 @@ document.getElementById('mh-client-review').addEventListener("touchmove", functi
   const diffY = currentPositionY - touchPositionStartY 
   const oppOverAdjacent = diffY/diffX
   
-  console.log('getTanFromDegrees', getDegreesFromAtan(oppOverAdjacent))
   if(Math.abs(getDegreesFromAtan(oppOverAdjacent)) >= 45) {
     
     return document.body.style.overflow = 'scroll';
