@@ -346,10 +346,15 @@
           $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
               var target = $(this.hash);
+              console.log('TARGET', target)
               target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+              
               if (target.length) {
+                const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
+			const mobileCompensation = vw < 992 ? -50 : 0;
                 $('html,body').animate({
-                  scrollTop: target.offset().top
+                  scrollTop: target.offset().top + mobileCompensation
                 }, 600);
                 return false;
               }

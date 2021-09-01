@@ -13,6 +13,7 @@
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
+
 @media only screen and (min-width: 1600px) {
   .home-video .mh-home .mh-header-info {
     padding: 100px 0;
@@ -40,6 +41,11 @@
 }
 
 @media only screen and (max-width: 991px) {
+
+  
+  .nav-link {
+    padding: 8px 20px !important;
+  }
   
   .mh-service {
     display: none;

@@ -151,7 +151,7 @@
 				}
 
 				//Change the highlighted nav item
-				self.adjustNav(self, $parent);
+				// self.adjustNav(self, $parent);
 
 				//Removing the auto-adjust on scroll
 				self.unbindInterval();
@@ -199,10 +199,19 @@
 		},
 
 		scrollTo: function(target, callback) {
+			// return
 			var offset = $(target).offset().top;
 
+			console.log('offset', offset)
+
+			const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+
+			const mobileCompensation = vw < 992 ? -50 : 0;
+
+			console.log("BALH")
+
 			$('html, body').animate({
-				scrollTop: offset
+				scrollTop: offset + mobileCompensation
 			}, this.config.scrollSpeed, this.config.easing, callback);
 		},
 

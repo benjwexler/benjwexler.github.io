@@ -898,7 +898,7 @@ button:focus {
   /* padding-right: 0;
   padding-left: 0; */
   /* border-color: #000; */
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 
@@ -1401,7 +1401,7 @@ li .fa {
 }
 
 .mh-header .navbar-nav li:hover {
-  background: black;
+  /* background: black; */
   /* transition: 0.3s ; */
 }
 
@@ -1422,7 +1422,7 @@ li .fa {
 }
 
 .mh-header .navbar-nav li a {
-  border-bottom: 1px solid transparent;
+  /* border-bottom: 1px solid transparent; */
   font-weight: bold;
   font-family: "roboto", sans-serif;
   font-size: 18px;
@@ -1430,21 +1430,24 @@ li .fa {
   line-height: 30px;
   transition: none;
   padding-bottom: 0;
+  
 }
 
 .mh-header .navbar-nav li a div {
   color: inherit;
-  padding-bottom: 8px;
+  /* padding-bottom: 8px; */
 }
 
 .nav-link {
-  padding-left: 20px !important;
-  padding-right: 20px !important;
+  padding: 0 !important;
+  /* padding-right: 0 !important; */
+  position: relative;
+  overflow: hidden;
   
 }
 
 .nav-link-container.active .nav-link{
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
 }
 
 
@@ -1454,13 +1457,19 @@ li .fa {
 }
 
 .mh-header .navbar-nav li a:hover {
-  color: #0bceaf;
-  transition: none;
+  /* color: #0bceaf; */
+  /* transition: none; */
   /* background: black; */
 }
 
 .mh-header .navbar-nav li a div:hover {
-  color: #0bceaf;
+  /* color: #0bceaf; */
+}
+
+.nav-item {
+  /* padding-left: 20px !important;
+  padding-right: 20px !important; */
+  padding: 8px 20px !important;
 }
 
 .nav-item:hover {
@@ -3942,6 +3951,7 @@ BLOG Pagination
 }
 
 .downloadResumeBtn {
+  transition: 0.1s all;
   /* border: 3px solid #0bceaf; */
 }
 .downloadResumeBtn:hover{
@@ -4068,7 +4078,7 @@ BLOG Pagination
   animation-name: fadeInUp;
   transition: 0.3s;
   box-shadow: 0 9px 5px 0 rgba(0, 0, 0, 0.16), 0 8px 10px 0 rgba(0, 0, 0, 0.12);
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   display: flex;
   padding-left: 45px;
@@ -4096,7 +4106,10 @@ BLOG Pagination
     margin-left: 65px;
     margin-right: 65px;
     
+    
 }
+
+
 
 .my-nav-item-link {
   color: #0bceaf !important;
@@ -4105,6 +4118,23 @@ BLOG Pagination
     margin: auto;
     border-radius: 3px;
 
+}
+
+.nav-item-desktop {
+  transform: translateY(0%);
+  transition: transform .3s;
+}
+
+.nav-link:hover .nav-item-desktop {
+  transform: translateY(-100%);
+}
+
+.nav-item-desktop::before {
+  position: absolute;
+    top: 100%;
+    content: attr(data-hover);
+    color: #0bceaf;
+    transform: translateZ(0);
 }
 
 .overlay {
